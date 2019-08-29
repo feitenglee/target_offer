@@ -1,8 +1,14 @@
-# 2019-08-28
-# by lifieteng@live.com
-# 回溯法求解可到达的格子个数
-# 1、考虑边界情况 j-1<=0, i-1<=0
-# 2、不用考虑不满足条件从根节点重新出发的问题
+#!/usr/bin/env python
+'''
+@Author: lifeiteng@live.com
+@Github: https://github.com/feitenglee/Target-Offer
+@Date: 2019-08-27 22:00:55
+@LastEditTime: 2019-08-29 15:16:53
+@Description: 回溯法求解可到达的格子个数
+1、考虑边界情况 j-1<=0, i-1<=0
+2、不用考虑不满足条件从根节点重新出发的问题
+@State: PYTHON35 PASS
+'''
 
 def moving_count(rows,cols,threshold):
     """

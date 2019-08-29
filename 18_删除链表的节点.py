@@ -1,7 +1,13 @@
-# 2019-08-26 PASS
-# by lifeiteng@live.com
-# O(1)时间删除单向链表中的某个节点，常规做法是遍历链表，找到待删除节点前一个节点，时间复杂度O（n）
-# 考虑三种情况：1、链表中只有一个节点（不包括哑节点）2、待删除节点在中间3、待删除节点是尾节点
+'''
+@Author: lifeiteng@live.com
+@Github: https://github.com/feitenglee/Target-Offer
+@Date: 2019-08-28 20:11:21
+@LastEditTime: 2019-08-29 15:06:00
+@Description: 
+O(1)时间删除单向链表中的某个节点，常规做法是遍历链表，找到待删除节点前一个节点，时间复杂度O（n）
+考虑三种情况：1、链表中只有一个节点（不包括哑节点）2、待删除节点在中间3、待删除节点是尾节点
+@State: PYTHON35 PASS
+'''
 
 class Node:
     def __init__(self, data, p = None):

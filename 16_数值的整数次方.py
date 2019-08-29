@@ -1,8 +1,15 @@
-# 2019-08-28 PASS
-# by lifieteng@live.com
-# 代码完整性：指数为负的情况，底为0的情况
-# 0 的 0次方数学上无意义，详细的情况可以单独考虑这种情况
-# 位运算提高效率
+#!/usr/bin/env python
+'''
+@Author: lifeiteng@live.com
+@Github: https://github.com/feitenglee/Target-Offer
+@Date: 2019-08-28 14:24:55
+@LastEditTime: 2019-08-29 15:16:42
+@Description: 
+代码完整性：指数为负的情况，底为0的情况
+0 的 0次方数学上无意义，详细的情况可以单独考虑这种情况 
+位运算提高效率
+@State: PYTHON35 PASS
+'''
 
 def power_define(base, exp):
     if base == 0 or exp == 0:

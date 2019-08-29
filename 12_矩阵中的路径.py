@@ -1,10 +1,14 @@
-# 2019-08-27
-# by lifieteng@live.com
-# 回溯法搜索路径
-# 1、考虑边界情况 j-1<=0, i-1<=0
-# 2、考虑不能往回走
-
-# import numpy as np
+#!/usr/bin/env python
+'''
+@Author: lifeiteng@live.com
+@Github: https://github.com/feitenglee/Target-Offer
+@Date: 2019-08-27 17:05:28
+@LastEditTime: 2019-08-29 15:16:59
+@Description: 回溯法搜索路径
+1、考虑边界情况 j-1<=0, i-1<=0
+2、考虑不能往回走
+@State: PYTHON35 PASS
+'''
 
 def has_path(lis,s):
     if not lis or not s:

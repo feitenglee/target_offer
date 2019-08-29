@@ -1,7 +1,12 @@
-# 2019-08-26 REFUCE
-# by lifeiteng@live.com
-# 全排列，递归解法
-#  遗留问题，不懂
+'''
+@Author: lifeiteng@live.com
+@Github: https://github.com/feitenglee/Target-Offer
+@Date: 2019-08-28 20:05:50
+@LastEditTime: 2019-08-29 15:05:11
+@Description: 全排列，递归解法
+@State: DONT PASS
+'''
+
 def perm(ls, start, end):
     if(start >= end):
         print(ls)

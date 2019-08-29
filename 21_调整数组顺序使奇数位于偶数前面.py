@@ -1,9 +1,15 @@
-# 2019-08-26 PASS
-# by lifeiteng@live.com
+#!/usr/bin/env python
+'''
+@Author: lifeiteng@live.com
+@Github: https://github.com/feitenglee/target_offer
+@Date: 2019-08-29 11:05:13
+@LastEditTime: 2019-08-29 15:16:29
+@Description: 
 # 可询问是否可借助辅助内存，还是在原数组基础上进行更改
 # 1、双指针
 # 2、增加代码复用，传入判断函数，主函数题不需要变动
-
+@State: PYTHON35 PASS
+'''
 
 def reorder_odd_even(num,fcn=None):
     if not isinstance(num, list):

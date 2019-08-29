@@ -1,7 +1,12 @@
-# 2019-08-28
-# by lifieteng@live.com
-# 1、动态规划解法
-# 2、贪婪算法解法
+#!/usr/bin/env python
+'''
+@Author: lifeiteng@live.com
+@Github: https://github.com/feitenglee/Target-Offer
+@Date: 2019-08-28 11:54:38
+@LastEditTime: 2019-08-29 15:16:49
+@Description: 1、动态规划解法 2、贪婪算法解法
+@State: PYTHON35 PASS
+'''
 
 def max_product(length):
     if length <= 1:

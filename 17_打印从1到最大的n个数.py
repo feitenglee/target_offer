@@ -1,6 +1,11 @@
-# 2019-08-28 PASS
-# by lifieteng@live.com
-# 大数问题,避免输出特别大的数，使用字符串代替int型数字
+'''
+@Author: lifeiteng@live.com
+@Github: https://github.com/feitenglee/Target-Offer
+@Date: 2019-08-28 14:52:23
+@LastEditTime: 2019-08-29 15:04:38
+@Description: 大数问题,避免输出特别大的数，使用字符串代替int型数字
+@State: PYTHON35 PASS
+'''
 
 def print_num(n):
     if n <= 0:

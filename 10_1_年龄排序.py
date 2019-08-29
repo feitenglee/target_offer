@@ -1,6 +1,14 @@
-# 2019-08-27
-# by lifieteng@live.com
+#!/usr/bin/env python
+'''
+@Author: lifeiteng@live.com
+@Github: https://github.com/feitenglee/target_offer
+@Date: 2019-08-27 14:20:09
+@LastEditTime: 2019-08-29 15:21:29
+@Description: 
 # 对有大量重复数字的数组排序，构造辅助内存，用空间换时间
+@State: PYTHON35 PASS
+'''
+
 import random
 import sys
 import numpy as np

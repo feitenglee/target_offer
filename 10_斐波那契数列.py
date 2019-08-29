@@ -1,6 +1,14 @@
-# 2019-08-27
-# by lifieteng@live.com
+#!/usr/bin/env python
+'''
+@Author: lifeiteng@live.com
+@Github: https://github.com/feitenglee/target_offer
+@Date: 2019-08-27 09:54:40
+@LastEditTime: 2019-08-29 15:21:53
+@Description: 
 # 斐波那契数列/青蛙跳台阶
+@State: PYTHON35 PASS
+'''
+
 import sys
 
 def fibonacci_recursion(n):

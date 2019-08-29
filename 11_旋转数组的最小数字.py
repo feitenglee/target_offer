@@ -1,8 +1,16 @@
-# 2019-08-27
-# by lifieteng@live.com
+#!/usr/bin/env python
+'''
+@Author: lifeiteng@live.com
+@Github: https://github.com/feitenglee/target_offer
+@Date: 2019-08-27 15:48:42
+@LastEditTime: 2019-08-29 15:22:36
+@Description: 
 # 二分查找的变种，需注意特殊情况。
 # 1、有序数组仍然是旋转数组。2、出现中间数字与两边数字相等的情况，采用顺序查找。
 # 3、只包含一个数字的数组
+@State: PYTHON35 PASS
+'''
+
 
 def min_rotate_list(lis):
     left,right,mid = 0,len(lis)-1,0

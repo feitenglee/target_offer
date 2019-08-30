@@ -3,7 +3,7 @@
 @Author: lifeiteng@live.com
 @Github: https://github.com/feitenglee/target_offer
 @Date: 2019-08-29 11:58:30
-@LastEditTime: 2019-08-29 17:02:34
+@LastEditTime: 2019-08-30 09:55:23
 @Description: 双指针，快慢指针，类似的还有求链表的中间节点，
 快指针每次走两步，慢指针每次走一步，快指针指向None，是慢指针
 说指节点即为中间节点

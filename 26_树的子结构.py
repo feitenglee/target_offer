@@ -3,8 +3,8 @@
 @Author: lifeiteng@live.com
 @Github: https://github.com/feitenglee/target_offer
 @Date: 2019-08-29 21:20:30
-@LastEditTime: 2019-08-29 22:00:57
-@Description: 递归，遍历二叉树
+@LastEditTime: 2019-08-31 14:45:39
+@Description: 递归，遍历二叉树,比较树1中是否包含树2所有节点
 @State: PYTHON35 PASS
 '''
 class TreeNode:

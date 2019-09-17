@@ -3,12 +3,12 @@
 @Author: lifeiteng@live.com
 @Github: https://github.com/feitenglee/target_offer
 @Date: 2019-08-29 22:04:54
-@LastEditTime: 2019-09-05 20:43:06
+@LastEditTime: 2019-09-11 09:44:54
 @Description: 
 @State: PYTHON35 PASS
 '''
 import sys
-from queue import Queue
+from queue import Queue#单向队列
 
 class TreeNode:
     def __init__(self, data=None, left=None, right=None):

@@ -3,7 +3,7 @@
 @Author: lifeiteng@live.com
 @Github: https://github.com/feitenglee/target_offer
 @Date: 2019-09-03 16:17:44
-@LastEditTime: 2019-09-05 16:42:59
+@LastEditTime: 2019-09-19 15:01:45
 @Description: 排序算法汇总
 a)快排：时间复杂度O(nlogn)
 思路：前两步是partition过程，第三步是递归过程
@@ -23,6 +23,35 @@ b)归并排序：时间复杂度O(nlogn)
 '''
 import sys
 import random
+
+############  选择排序 ###########################
+def select_sort(lis):
+    if not isinstance(lis, list):
+        print("input is not list type!")        
+        sys.exit(1)
+    if not lis:
+        return 
+    for i in range(len(lis)):
+        min_index = i
+        for j in range(i+1,len(lis)):
+            if lis[j] < lis[i]:#默认
+                min_index = j
+        lis[i],lis[min_index] = lis[min_index],lis[i]
+
+############  插入排序 ###########################
+def insert_sort(lis):
+    if not isinstance(lis, list):
+        print("input is not list type!")        
+        sys.exit(1)
+    if not lis:
+        return
+    for i in range(1,len(lis)):
+        for j in range(1,i+1)[::-1]:
+            if lis[j] < lis[i]:
+                lis[i],lis[j] = lis[j],lis[i]
+            else:
+                break
+
 ############  快排 ###########################
 def quick_sort(lis):
     if not isinstance(lis, list):
@@ -83,12 +112,46 @@ def merge(lis, l, mid, r):
             lis[k] = tmp[i]
             i += 1
 
+class max_heap:
+    def __init__(self, capacity):
+        self.capacity = capacity + 1
+        self.data = [0,]#第0个元素默认为0，堆的根节点索引从1开始
+        self.count = 0
+    def insert(self,val):
+        if self.count < self.capacity:
+            self.data.append(val)
+            self.count += 1
+            shift_up(count)
+        else:
+            print("max heap is full!")
+    def size(self):
+        return self.count
+    def is_empty(self):
+        return self.count == 0
+    def extract_max(self):
+        ret = self.data[1]
+        self.data[1],self.data[-1] = self.data[-1],self.data[1]
+        count -= 1
+        shift_down(1)
+        return ret
+    def shift_up(self, k):
+        while k > 1 and self.data[k/2] < self.data[k]:
+            self.data[k/2],self.data[k] = self.data[k],self.data[k/2]
+            k = k / 2
+    def shift_down(sheft,k):
+        
 if __name__ == "__main__":
     lis = [random.randint(0,10) for _ in range(10)]
     lis1 = lis
+    lis2 = lis
+    lis3 = lis
     print(lis)
     quick_sort(lis)
     merge_sort(lis1)
+    select_sort(lis2)
+    insert_sort(lis3)
     
-    print("quick_sort",lis)
-    print("merge_sort",lis1)
+    print("quick_sort:",lis)
+    print("merge_sort:",lis1)
+    print("select_sort:",lis2)
+    print("insert_sort:",lis3)
